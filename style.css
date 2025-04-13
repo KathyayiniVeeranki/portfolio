@@ -1,0 +1,427 @@
+/* style.css */
+body.dark-theme {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+    line-height: 1.6;
+  }
+  header {
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  nav h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #00bcd4;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #00bcd4;
+  }
+  
+  section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  section h2 {
+    color: #00bcd4;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .project {
+   
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #00bcd4;
+    transition: transform 0.3s;
+  }
+  
+  .project:hover {
+    transform: scale(1.02);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #888;
+  }
+  
+  a {
+    color: #80d8ff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  nav ul li a.active {
+    color: #80d8ff;
+    border-bottom: 2px solid #00bcd4;
+  }
+  .floating-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .floating-bg img {
+    position: absolute;
+    width: 80px;
+    opacity: 0.1;
+    animation: float 20s linear infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+    }
+  }
+  .floating-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .float-item {
+    position: absolute;
+    color: #00bcd4;
+    opacity: 0.08;
+    font-weight: bold;
+    animation: floatItem linear infinite;
+    user-select: none;
+  }
+  
+  @keyframes floatItem {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+    }
+  }
+  .floating-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .float-item {
+    position: absolute;
+    color: #00bcd4;
+    opacity: 0.08;
+    font-weight: bold;
+    animation: floatItem linear infinite;
+    user-select: none;
+  }
+  
+  @keyframes floatItem {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+    }
+  }
+
+
+.float-item {
+  position: absolute;
+  color: #00bcd4;
+  opacity: 0.08;
+  font-weight: bold;
+  animation: floatItem linear infinite;
+  user-select: none;
+}
+
+@keyframes floatItem {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+  }
+}
+  #name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #00bcd4;
+  letter-spacing: 5px;
+}
+
+#name span {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#name span.show {
+  opacity: 1;
+  transform: scale(1);
+}
+#name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #00bcd4;
+    letter-spacing: 5px;
+  }
+  
+  #name span {
+    display: inline-block;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  #name span.jump {
+    transform: translateY(-10px);
+    opacity: 0.7;
+  }
+  #about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  #about h2 {
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .name-container {
+    flex: 1;
+  }
+  
+  .name-container h1 {
+    font-size: 3em;
+    color: #00bcd4;
+  }
+  
+  .resume-container {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .download-resume {
+    font-size: 1.2em;
+    color: #00bcd4;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .download-resume:hover {
+    background-color: #00bcd4;
+    color: #fff;
+  }
+  .resume-link {
+    color: #00bcd4; /* bright blue */
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #00bcd4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .resume-link i {
+    margin-left: 8px;
+  }
+  
+  .resume-link:hover {
+    background-color: #00bcd4;
+    color: #fff;
+  }
+  #about {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4f123a; /* Bright blue */
+    color: #fff; /* Light text color for contrast */
+    line-height: 1.6;
+  }
+  .floating-bg img {
+    position: absolute;
+    width: 80px;
+    opacity: 0.3; /* increase visibility */
+    filter: brightness(2); /* make brighter */
+    animation: float 20s linear infinite;
+  }
+  .about-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+  }
+  
+  .intro-heading {
+    font-size: 3rem;
+  }
+  
+  .intro-subheading {
+    font-size: 1.5rem;
+    max-width: 800px;
+  }
+  #skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #skills ul li {
+    display: flex;
+    justify-content: space-between; /* Space between text and icon */
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  #skills ul li span {
+    font-size: 1.2rem;
+  }
+  
+  #skills ul li i {
+    font-size: 3rem; /* Larger icon size */
+    color: #f1f1f1; /* Default icon color */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Add colors to specific icons */
+  #skills ul li .fab.fa-java {
+    color: #ff5722; /* Orange for Java */
+  }
+  
+  #skills ul li .fas.fa-database {
+    color: #00796b; /* Teal for SQL */
+  }
+  
+  #skills ul li .fab.fa-html5 {
+    color: #e34f26; /* Red for HTML */
+  }
+  
+  #skills ul li .fab.fa-css3-alt {
+    color: #2965f1; /* Blue for CSS */
+  }
+  
+  #skills ul li .fab.fa-js-square {
+    color: #f0db4f; /* Yellow for JavaScript */
+  }
+  
+  #skills ul li .fas.fa-cogs {
+    color: #1976d2; /* Blue for MySQL */
+  }
+  
+  #skills ul li .fab.fa-github {
+    color: #211F1F; /* Dark for GitHub */
+  }
+  
+  #skills ul li .fas.fa-terminal {
+    color: #4CAF50; /* Green for VS Code */
+  }
+  
+  /* Add hover effect for icons */
+  #skills ul li i:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+  }
+  #skills h2 {
+    color: #00bcd4;
+    text-align: center; /* Center the text */
+    position: relative;
+    font-size: 2em;
+    margin: 30px 0; /* Space above and below */
+}
+
+#skills h2::before,
+#skills h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%; /* Width of the lines */
+    height: 2px; /* Thickness of the lines */
+    background-color: #00bcd4; /* Color of the lines */
+}
+
+#skills h2::before {
+    left: 0; /* Left line */
+    margin-left: 0; /* Adjust the position of the left line */
+}
+
+#skills h2::after {
+    right: 0; /* Right line */
+    margin-right: 0; /* Adjust the position of the right line */
+}
+
+
+
+
+  
+  
+  
+  
+  
